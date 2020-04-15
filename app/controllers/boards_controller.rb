@@ -10,23 +10,40 @@ class BoardsController < ApplicationController
   end
 
   def create
-    Board.create(board_params)
+    board = Board.new(board_params)
+    if board.save
+      flash[:notice] = "「#{board.title}」の掲示板を作成しました"
+      redirect_to board
+    else
+      redirect_to new_board_path, flash: {
+        board: board,
+        error_messages: board.errors.full_messages
+      }
+    end
   end
 
   def show
+    @comment = Comment.new(board_id: @board.id)
   end
 
   def edit
   end
 
   def update
-    @board.update(board_params)
-    redirect_to @board
+    if @board.update(board_params)
+        flash[:notice] = "適切に更新が正行われました"
+      redirect_to @board
+    else
+      redirect_to :back, flash:{
+        board: @board,
+        error_messages: @board.errors.full_messages
+      }
+    end
   end
 
   def destroy
     @board.delete
-    redirect_to boards_path
+    redirect_to boards_path,flash: { notice:"「#{@board.title}」の掲示板が削除されました"}
   end
 
 
