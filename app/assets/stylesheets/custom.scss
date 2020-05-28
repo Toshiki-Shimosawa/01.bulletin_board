@@ -1,0 +1,357 @@
+
+  #map {
+    width:100%;
+    max-width: 680px;
+    margin: 0 auto;
+    height: 300px;
+  }
+  #shop-list {
+    list-style: none;
+    width: 100%;
+  }
+  #content {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 0px auto;
+    padding-top: 100px;
+  }
+  span {
+    display: block;
+  }
+  h2 {
+    text-align: center;
+    border-bottom: solid 1px #5555;
+    margin: 20px;
+    font-size: 20px;
+  }
+  a {
+    display: flex;
+    text-decoration: none;
+    color: #555;
+  }
+  
+  .header{
+    width: 100%;
+    height: 90px;
+    background-color:#ffffff;
+    min-width: 1100px;
+    box-shadow: 3px 3px 3px 1px rgba(0,0,0,0.08) ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 20;
+  }
+  
+  .header-left{
+    order: 1;
+    flex-basis: 25%;
+  }
+  
+  .header-center{
+    order: 2;
+    flex-basis: 50%
+  }
+  
+  .header-right{
+    order: 3;
+    flex-basis: 25%
+  }
+  
+  .header-right p{
+    color:rgb(39, 131, 3);
+    font-weight: 700;
+  }
+  
+  .title-group{
+    float: left;
+    text-align: center;
+  }
+  
+  .title-group h1{
+    display: inline-block;
+  }
+  
+  .title-group span{
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .title-group　img{
+    display: inline-block;
+  }
+  
+  .each-shop {
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #5555;
+    position: relative;
+  }
+  .shop-img {
+    width:100px;
+    height: 100px;
+  }
+  .shop-name{
+    font-weight: bold;
+    border-bottom: solid 1px #5555;
+  }
+  .time {
+    font-size: 12px;
+  }
+  .shop-content {
+    margin: 10px;
+  }
+  .fa-map-marker{
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    color: red;
+  }
+  .icon {
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .contact{
+    line-height: 90px;
+    text-align: right;
+    margin-right: 20px;
+  }
+  .contact *{
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 20px;
+  }
+  
+  .menu-title{
+    height: 70px;
+    background-color: rgb(78, 56, 76);
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 0;
+    line-height: 70px;
+    padding-left: 10px;
+  }
+  ul.localnavi {
+    background-color: rgb(78, 56, 76);
+    list-style-type: none;
+  }
+  
+  .localnavi li{
+    height: 50px;
+    border-left: solid 10px rgb(69, 150, 137);
+  }
+  
+  .localnavi li :hover{
+    background-color: rgb(69, 150, 137);
+    border-left: solid 30px rgb(69, 150, 137);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  
+  li{
+    display: flex;
+  
+  }
+  
+  .localnavi a{
+    display: flex;
+    font-weight: 600;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    color: #ffffff;
+    padding-left: 10px
+  }
+  
+  .to-top{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 200px;
+    height: 100px;
+  }
+  
+  .to-top p{
+    color: #278301;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-text-stroke:1px #fff;
+    font-size: 18px;
+  }
+  
+  .what-avocabo{
+    width: 81%;
+    height: 200px;
+    position: relative;
+    margin: 200px auto;
+    padding-top: 20px;
+  }
+  
+  .what-avocabo::before,.what-avocabo::after{
+      content: '';
+      width: 50px;
+      height: 50px;
+      position: absolute;
+  }
+  
+  .what-avocabo::before {
+    border-left: solid 4px rgb(38, 131, 2);
+    border-top: solid 4px rgb(38, 131, 2);
+    top:0;
+    bottom: 0;
+  }
+  
+  .what-avocabo::after {
+    border-right: solid 4px rgb(38, 131, 2);
+    border-bottom: solid 4px rgb(38, 131, 2);
+    bottom:0;
+    right:0;
+  }
+  
+  .what-avocabo h3{
+    position: absolute;
+    left: 50%;
+      transform: translate(-50%,-50%);
+    z-index: 10;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .what-avocabo img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  
+  }
+  
+  .what-avocabo p{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 50px;
+  }
+  
+  #serch-button{
+    display: flex;
+    background-color: rgb(39, 131, 1);
+    width: 190px;
+    height: 50px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    margin: 0 auto;
+    margin-top: 80px;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.29);
+  }
+  
+  #serch-button:hover{
+    background-color: rgb(203, 237, 187);
+    color: #fff;
+  }
+  
+  #serch-button:active{
+    box-shadow: none;
+    transform: translateY(3px);
+  }
+  
+  
+  #nav-drawer {
+    position: relative;
+  
+  }
+  
+  /*チェックボックス等は非表示に*/
+  .nav-unshown {
+    display:none;
+  }
+  
+  /*アイコンのスペース*/
+  #nav-open {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 22px;
+    top:50%;
+    transform: translateY(-50%);
+    margin-left: 20px;
+  }
+  
+  /*ハンバーガーアイコンをCSSだけで表現*/
+  #nav-open span, #nav-open span:before, #nav-open span:after {
+    position: absolute;
+    height: 3px;/*線の太さ*/
+    width: 25px;/*長さ*/
+    border-radius: 3px;
+    background: #555;
+    display: block;
+    content: '';
+    cursor: pointer;
+  }
+  #nav-open span:before {
+    bottom: -8px;
+  }
+  #nav-open span:after {
+    bottom: -16px;
+  }
+  
+  /*閉じる用の薄黒カバー*/
+  #nav-close {
+    display: none;/*はじめは隠しておく*/
+    position: fixed;
+    z-index: 99;
+    top: 0;/*全体に広がるように*/
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    transition: .3s ease-in-out;
+  }
+  
+  /*中身*/
+  #nav-content {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;/*最前面に*/
+    width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
+    max-width: 330px;/*最大幅（調整してください）*/
+    height: 100%;
+    background: #fff;/*背景色*/
+    transition: .3s ease-in-out;/*滑らかに表示*/
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);/*左に隠しておく*/
+    background-color: rgb(78, 56, 76);
+  }
+  
+  /*チェックが入ったらもろもろ表示*/
+  #nav-input:checked ~ #nav-close {
+    display: block;/*カバーを表示*/
+    opacity: .5;
+  }
+  
+  #nav-input:checked ~ #nav-content {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);/*中身を表示（右へスライド）*/
+    box-shadow: 6px 0 25px rgba(0,0,0,.15);
+  }
+  
+  @media screen and (min-width: 750px){
+    h1 {
+      font-size: 32px;
+      color: rgb(39, 131, 3);
+    }
+  }
+  
