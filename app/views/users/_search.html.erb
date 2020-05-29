@@ -49,7 +49,7 @@ function test2(position) {
 
   $.ajax({
     type : "get",
-    url　: "https://api.gnavi.co.jp/RestSearchAPI/v3/?keyid=87f9561026d0fabde41ab8b7066fbdd5&freeword=糖質制限,低糖質,ロカボ,ローカーボ,糖質オフ,糖質OFF,糖質ゼロ,グルテンフリー&freeword_condition=2&latitude="+lat+"&longitude="+lng+"&range=4",
+    url　: "https://api.gnavi.co.jp/RestSearchAPI/v3/?keyid=87f9561026d0fabde41ab8b7066fbdd5&freeword=糖質制限,低糖質,ロカボ,ローカーボ,糖質オフ,糖質OFF,糖質ゼロ,グルテンフリー,焼肉,焼き鳥&freeword_condition=2&latitude="+lat+"&longitude="+lng+"&range=4",
     dataType : 'json',
     success　: function(json){
       let num_shop = json.rest.length;
