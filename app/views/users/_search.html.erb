@@ -19,7 +19,6 @@
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4utc0nSonoVSrT_RBWIM7DtRATXrjZoc&callback=initMap"></script>
 <script>
-// 地図を表示する
 
 var map;
 
@@ -29,7 +28,7 @@ function initMap() {
   });
 }
 
-// ボタンクリック後、現在地を取得して地図に表示する
+
 document.getElementById("serch-button").onclick = function() {
 
 let a = navigator.geolocation.getCurrentPosition(test2);
@@ -45,8 +44,7 @@ function test2(position) {
         scaledSize: new google.maps.Size(40, 40)
       }
   });
-//
-// 現在地の近くにあるwifiのあるカフェを探す
+
   $.ajax({
     type : "get",
     url　: "https://api.gnavi.co.jp/RestSearchAPI/v3/?keyid=87f9561026d0fabde41ab8b7066fbdd5&freeword=糖質制限,低糖質,ロカボ,ローカーボ,糖質オフ,糖質OFF,糖質ゼロ,グルテンフリー,焼肉,焼き鳥&freeword_condition=2&latitude="+lat+"&longitude="+lng+"&range=4",
@@ -77,8 +75,7 @@ function test2(position) {
       console.log("error")
     }
   });
-//
-  // 地図をカスタマイズする
+
   var styleOptions = [
     {
       "featureType": "administrative",
